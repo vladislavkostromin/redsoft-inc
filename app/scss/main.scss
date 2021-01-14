@@ -1,0 +1,83 @@
+// Подключаем шрифты
+@import 'fonts';
+
+// Подключаем normalize.css https://github.com/necolas/normalize.css
+@import 'normalize';
+
+// Подключаем общие стили для всего проекта
+@import 'config';
+
+// Подключаем контейнер 
+@import 'container';
+
+/*! Основные стили */
+
+
+header{
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.header__wrap{
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.header__menu{
+  flex-grow: 1;
+  margin-left: 48px;
+}
+
+.header__search{
+  height: 48px;
+  display: flex;
+}
+
+.header__link{
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #343030;
+  margin-right: 48px;
+  transition: all .2s linear;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &:hover{
+    color: #776763;
+  }
+}
+
+.header__input{
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 16px;
+  width: 294px;
+  flex-grow: 1;
+
+  &::placeholder{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9F9F9F;
+  }
+}
+
+.header__btn{
+  height: 100%;
+  background: #403432;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  width: 122px;
+  cursor: pointer;
+  transition: all .2s linear;
+
+  &:hover{
+    background: #776763;
+  }
+}
