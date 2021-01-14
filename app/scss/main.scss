@@ -17,23 +17,27 @@ header{
   border-bottom: 1px solid #E1E1E1;
 }
 
-.header__wrap{
+.menu{
   display: flex;
   align-items: center;
   padding: 24px 0;
 }
 
-.header__menu{
+.menu__wrap{
   flex-grow: 1;
   margin-left: 48px;
 }
 
-.header__search{
+.menu__search{
   height: 48px;
   display: flex;
+
+  &--contact{
+    align-items: center;
+  }
 }
 
-.header__link{
+.menu__link{
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -51,7 +55,7 @@ header{
   }
 }
 
-.header__input{
+.menu__input{
   border: 1px solid #E1E1E1;
   box-sizing: border-box;
   height: 100%;
@@ -67,7 +71,7 @@ header{
   }
 }
 
-.header__btn{
+.btn{
   height: 100%;
   background: #403432;
   border: none;
@@ -80,4 +84,113 @@ header{
   &:hover{
     background: #776763;
   }
+}
+
+.picture__title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: #343030;
+  margin-bottom: 39px;
+  margin-top: 0;
+}
+
+.picture__items{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+
+.picture__item{
+  width: calc(25% - 32px);
+  margin-right: 32px;
+  height: 328px;
+  border: 1px solid #E1E1E1;
+
+  &--sales{
+    opacity: 0.5;
+  }
+}
+
+.picture__wrap{
+  margin-top: 45px;
+}
+
+.picture__item-sales{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #343030;
+}
+
+.picture__item-bottom{
+  padding: 20px 24px 24px 24px;
+}
+
+.picture__item-title{
+  font-size: 18px;
+  line-height: 150%;
+  color: #343030;
+  margin: 0;
+}
+
+.picture__item-buy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  height: 48px;
+}
+
+.picture__item-buy-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.picture__item-buy-right{
+  height: 100%;
+}
+
+.picture__item-price{
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #343030;
+
+  &--none{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #A0A0A0;
+  }
+}
+
+footer{
+  background: #ECEAEA;
+  margin-top: 320px;
+}
+
+.menu__contact{
+  text-decoration: none;
+  margin-right: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 150%;
+  color: #555555;
+  transition: all .2s linear;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &:hover{
+    color: #A0A0A0;
+  }
+}
+
+.menu__svg{
+  margin-right: 8px;
 }
